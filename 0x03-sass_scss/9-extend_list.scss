@@ -3,10 +3,12 @@
     font-size: 12px; 
 }
   
-  .info .success {
+  .success {
     color: #00FF00; 
+    @extend .info;
 }
   
-  .info .warning {
+  .warning {
     color: #FF0000; 
+    @extend .info;
 }
