@@ -1,0 +1,6 @@
+/* SASS */
+@for $nb from 1 through 5 {
+	h#{$nb} {
+		font-size: #{$nb}px;
+	}
+}
