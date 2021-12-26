@@ -2,8 +2,8 @@
 @mixin margin {
 }
 body {
-    margin: 10px;
+	@include margin(10px);
 }
 div {
-    margin: 15px;
+	@include margin(15px);
 }
