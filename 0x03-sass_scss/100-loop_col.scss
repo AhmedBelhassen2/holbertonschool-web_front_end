@@ -1,0 +1,6 @@
+/* SASS */
+@for $nb from 1 through 4 {
+	.col-#{$nb} {
+		width: 100% / $nb;
+	}
+}
