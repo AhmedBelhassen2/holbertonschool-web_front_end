@@ -1,0 +1,7 @@
+/* SASS */
+@import '11-photos';
+@each $my_item in $my_list {
+	.photo-#{$my_item} {
+		background-image: image-url("photos/#{$my-item}.jpg") no-repeat;
+	}
+}
