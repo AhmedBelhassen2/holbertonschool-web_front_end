@@ -2,8 +2,9 @@
 $primary-color: #3D3D3D;
 $secondary-color: #FF0000;
 body {
-    color: $primary-color;
-}
-body .red {
-    color: $secondary-color; 
+        color: $primary-color;
+        .red {
+                color: $secondary-color; 
+
+    }
 }
