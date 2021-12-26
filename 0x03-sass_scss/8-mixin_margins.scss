@@ -1,5 +1,7 @@
 /* SASS */
-@mixin margin {
+@mixin margin($prop) {
+    margin-left: $prop;
+	margin-right: $prop;
 }
 body {
 	@include margin(10px);
