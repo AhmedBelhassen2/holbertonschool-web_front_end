@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+	<title>Home Page</title>
+	<meta name="description" content="Description of the page less than 150 characters">
+
+	<link rel="icon" type="image/ico" href="images/favicon.ico">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Coiny&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./holberton_school-icon/style.css">
+
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+		crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" href="styles.css">
+
+	<!-- Header -->
+    <body style="background-image: url(./holberton_school-icon/images/pic_3.jpg);"> 
+
+        <header class="header container-fluid text-center text-white">
+          <nav class="navbar justify-content-space-between">
+            <div class="col-sm-4">
+              <a href="./homepage.html" class="navbar-brand">
+                <img
+                  class="smile-school-logo m-2"
+                  src="./holberton_school-icon/images/smile_off.png"
+                  alt="Smile logo"
+                  height="15%"
+                  width="15%"
+                />
+                <img
+                  class="smile-school-logo"
+                  src="./holberton_school-icon/images/logo.png"
+                  alt="Smile School logo"
+                />
+              </a>
+            </div>
+            <input type="checkbox" id="menu-btn" />
+            <label for="menu-btn" id="menu"></label>
+            <ul
+              class="nav header-nav row unstyled justify-content-space-between mt-3"
+            >
+              <li class="col-sm-3 mx-2 nav-item">
+                <a href="./courses.html" class="nav-link text-white text-center"
+                  >COURSES</a
+                >
+              </li>
+              <li class="col-sm-3 mx-2 nav-item">
+                <a href="./pricing.html" class="nav-link text-white text-center"
+                  >PRICING</a
+                >
+              </li>
+              <li class="col-sm-3 nav-item">
+                <a href="./login.html" class="nav-link text-white text-center"
+                  >LOGIN</a
+                >
+              </li>
+            </ul>
+          </nav>
+           <!--Hero section-->
+        <section class="hero-section pb-5 nav header-nav ">
+            <h1 class="dont text-white container " style="font-family: 'coiny';">
+                « Don’t cry because it’s over.
+                <span style="color: #C271FF;">Smile</span> because it happened. »
+            </h1>
+          </section>
+        </header>
+    
+      <!-- Search section -->
+      <section class="container-fluid dropdown py-4" style="background-color: #C271FF">
+        <form>
+          <div class="row">
+            <div class="col-md-12 col-lg-4 form-group">
+              <label for="keywords" class="d-block text-white">KEYWORDS</label>
+              <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text " style="background-color: rgb(209,149,255)">
+                    <div class="holberton_school-icon-search_1"></div>
+                  </div>
+                </div>
+
+                <input type="text" class="form-control" placeholder="Search by keywords" style="background-color: rgb(209,149,255); ">
+              </div>
+            </div>
+  
+            <div class="col-md-4 col-lg-4 form-group">
+              <label for="topic" class="text-white">TOPIC</label>
+              <div class="input-group">
+                <select class="form-control" id="topic" style="background-color: rgb(209,149,255); color:#ffffff" ;>
+                  <option value="novice" class="bg-white" style="color: black;">Novice</option>
+                  <option value="intermediate" class="bg-white" style="color: black;">Intermediate</option>
+                  <option value="expert" class="bg-white" style="color: black;">Expert</option>
+                </select>
+              </div>
+            </div>
+  
+            <div class="col-md-4 col-lg-4 form-group">
+              <label for="topic" class="text-white">SORT BY</label>
+              <div class="input-group">
+                <select class="form-control" id="topic" style="background-color: rgb(209,149,255); color:#ffffff;">
+                  <option value="novice" class="bg-white" style="color: black;">Most Poular</option>
+                  <option value="intermediate" class="bg-white" style="color: black;">Most Recent</option>
+                  <option value="expert" class="bg-white" style="color: black;">Most Viewed</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </form>
+      </section>
+     <!-- Results section -->
+  <section class="p-5 tutorials bg-white ">
+    <div class="container opacity-35 text-muted mb-5">11 videos</div>
+    <div class=" row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 main-article">
+
+        <li class="list-unstyled mr-4 d-block d-sm-block d-md-block">
+            <div class="card border-0" style="width: 14rem;">
+                <img class="card-img-top" src="./holberton_school-icon/images/thumbnail_1.jpg" alt="Card image cap">
+                <img src="./holberton_school-icon/images/play.png" alt="Card image cap" width="80" height="80" style="position: absolute; top: 30px; right: 80px;">
+                <div class="card-body small p-0">
+                    <h6 class="card-title font-weight-bold mb-1 mt-0 text-muted">Diagonal Smile</h6>
+                    <p class="card-text text-secondary text-justify cardtext mb-4">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                    <figure class="d-flex align-items-center mb-1">
+                        <img class="rounded-circle" src="./holberton_school-icon/images/profile_1.jpg" width="30" height="30">
+                        <figcaption>
+                            <p class="ml-2" style="color: #C271FF;">Phillip Massey</p>
+                        </figcaption>
+                    </figure>
+                        <div class="d-flex">
+                        <img class="mr-1" src="./holberton_school-icon/images/star_on.png" width="15" height="15">
+                        <img class="mr-1" src="./holberton_school-icon/images/star_on.png" width="15" height="15">
+                        <img class="mr-1" src="./holberton_school-icon/images/star_on.png" width="15" height="15">
+                        <img class="mr-1" src="./holberton_school-icon/images/star_on.png" width="15" height="15">
+                        <img src="./holberton_school-icon/images/star_off.png" width="15" height="15">
+                        <p class="ml-5" style="color: #C271FF;">8min</p>
+                </div>
+            </div>
+        </li>
+
+        <li class="list-unstyled mr-4 d-block d-sm-block d-md-block">
+            <div class="card border-0" style="width: 14rem;">
+                <img class="card-img-top" src="./holberton_school-icon/images/thumbnail_1.jpg" alt="Card image cap">
+                <img src="./holberton_school-icon/images/play.png" alt="Card image cap" width="80" height="80" style="position: absolute; top: 30px; right: 80px;">
+                <div class="card-body small p-0">
+                    <h6 class="card-title font-weight-bold mb-1 mt-0 text-muted">Diagonal Smile</h6>
+                    <p class="card-text text-secondary text-justify cardtext mb-4">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                    <figure class="d-flex align-items-center mb-1">
+                        <img class="rounded-circle" src="./holberton_school-icon/images/profile_1.jpg" width="30" height="30">
+                        <figcaption>
+                            <p class="ml-2" style="color: #C271FF;">Phillip Massey</p>
+                        </figcaption>
+                    </figure>
+                        <div class="d-flex">
+                        <img class="mr-1" src="./holberton_school-icon/images/star_on.png" width="15" height="15">
+                        <img class="mr-1" src="./holberton_school-icon/images/star_on.png" width="15" height="15">
+                        <img class="mr-1" src="./holberton_school-icon/images/star_on.png" width="15" height="15">
+                        <img class="mr-1" src="./holberton_school-icon/images/star_on.png" width="15" height="15">
+                        <img src="./holberton_school-icon/images/star_off.png" width="15" height="15">
+                        <p class="ml-5" style="color: #C271FF;">8min</p>
+                </div>
+            </div>
+        </li>
+        <li class="list-unstyled mr-4 d-block d-sm-block d-md-block">
+            <div class="card border-0" style="width: 14rem;">
+                <img class="card-img-top" src="./holberton_school-icon/images/thumbnail_1.jpg" alt="Card image cap">
+                <img src="./holberton_school-icon/images/play.png" alt="Card image cap" width="80" height="80" style="position: absolute; top: 30px; right: 80px;">
+                <div class="card-body small p-0">
+                    <h6 class="card-title font-weight-bold mb-1 mt-0 text-muted">Diagonal Smile</h6>
+                    <p class="card-text text-secondary text-justify cardtext mb-4">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                    <figure class="d-flex align-items-center mb-1">
+                        <img class="rounded-circle" src="./holberton_school-icon/images/profile_1.jpg" width="30" height="30">
+                        <figcaption>
+                            <p class="ml-2" style="color: #C271FF;">Phillip Massey</p>
+                        </figcaption>
+                    </figure>
+                        <div class="d-flex">
+                        <img class="mr-1" src="./holberton_school-icon/images/star_on.png" width="15" height="15">
+                        <img class="mr-1" src="./holberton_school-icon/images/star_on.png" width="15" height="15">
+                        <img class="mr-1" src="./holberton_school-icon/images/star_on.png" width="15" height="15">
+                        <img class="mr-1" src="./holberton_school-icon/images/star_on.png" width="15" height="15">
+                        <img src="./holberton_school-icon/images/star_off.png" width="15" height="15">
+                        <p class="ml-5" style="color: #C271FF;">8min</p>
+                </div>
+            </div>
+        </li>
+
+        <li class="list-unstyled mr-4 d-block d-sm-block d-md-block">
+            <div class="card border-0" style="width: 14rem;">
+                <img class="card-img-top" src="./holberton_school-icon/images/thumbnail_1.jpg" alt="Card image cap">
+                <img src="./holberton_school-icon/images/play.png" alt="Card image cap" width="80" height="80" style="position: absolute; top: 30px; right: 80px;">
+                <div class="card-body small p-0">
+                    <h6 class="card-title font-weight-bold mb-1 mt-0 text-muted">Diagonal Smile</h6>
+                    <p class="card-text text-secondary text-justify cardtext mb-4">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                    <figure class="d-flex align-items-center mb-1">
+                        <img class="rounded-circle" src="./holberton_school-icon/images/profile_1.jpg" width="30" height="30">
+                        <figcaption>
+                            <p class="ml-2" style="color: #C271FF;">Phillip Massey</p>
+                        </figcaption>
+                    </figure>
+                        <div class="d-flex">
+                        <img class="mr-1" src="./holberton_school-icon/images/star_on.png" width="15" height="15">
+                        <img class="mr-1" src="./holberton_school-icon/images/star_on.png" width="15" height="15">
+                        <img class="mr-1" src="./holberton_school-icon/images/star_on.png" width="15" height="15">
+                        <img class="mr-1" src="./holberton_school-icon/images/star_on.png" width="15" height="15">
+                        <img src="./holberton_school-icon/images/star_off.png" width="15" height="15">
+                        <p class="ml-5" style="color: #C271FF;">8min</p>
+                </div>
+            </div>
+        </li>
+
+        <li class="list-unstyled mr-4 d-block d-sm-block d-md-block">
+            <div class="card border-0" style="width: 14rem;">
+                <img class="card-img-top" src="./holberton_school-icon/images/thumbnail_1.jpg" alt="Card image cap">
+                <img src="./holberton_school-icon/images/play.png" alt="Card image cap" width="80" height="80" style="position: absolute; top: 30px; right: 80px;">
+                <div class="card-body small p-0">
+                    <h6 class="card-title font-weight-bold mb-1 mt-0 text-muted">Diagonal Smile</h6>
+                    <p class="card-text text-secondary text-justify cardtext mb-4">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                    <figure class="d-flex align-items-center mb-1">
+                        <img class="rounded-circle" src="./holberton_school-icon/images/profile_1.jpg" width="30" height="30">
+                        <figcaption>
+                            <p class="ml-2" style="color: #C271FF;">Phillip Massey</p>
+                        </figcaption>
+                    </figure>
+                        <div class="d-flex">
+                        <img class="mr-1" src="./holberton_school-icon/images/star_on.png" width="15" height="15">
+                        <img class="mr-1" src="./holberton_school-icon/images/star_on.png" width="15" height="15">
+                        <img class="mr-1" src="./holberton_school-icon/images/star_on.png" width="15" height="15">
+                        <img class="mr-1" src="./holberton_school-icon/images/star_on.png" width="15" height="15">
+                        <img src="./holberton_school-icon/images/star_off.png" width="15" height="15">
+                        <p class="ml-5" style="color: #C271FF;">8min</p>
+                </div>
+            </div>
+        </li>
+
+        <li class="list-unstyled mr-4 d-block d-sm-block d-md-block">
+            <div class="card border-0" style="width: 14rem;">
+                <img class="card-img-top" src="./holberton_school-icon/images/thumbnail_1.jpg" alt="Card image cap">
+                <img src="./holberton_school-icon/images/play.png" alt="Card image cap" width="80" height="80" style="position: absolute; top: 30px; right: 80px;">
+                <div class="card-body small p-0">
+                    <h6 class="card-title font-weight-bold mb-1 mt-0 text-muted">Diagonal Smile</h6>
+                    <p class="card-text text-secondary text-justify cardtext mb-4">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                    <figure class="d-flex align-items-center mb-1">
+                        <img class="rounded-circle" src="./holberton_school-icon/images/profile_1.jpg" width="30" height="30">
+                        <figcaption>
+                            <p class="ml-2" style="color: #C271FF;">Phillip Massey</p>
+                        </figcaption>
+                    </figure>
+                        <div class="d-flex">
+                        <img class="mr-1" src="./holberton_school-icon/images/star_on.png" width="15" height="15">
+                        <img class="mr-1" src="./holberton_school-icon/images/star_on.png" width="15" height="15">
+                        <img class="mr-1" src="./holberton_school-icon/images/star_on.png" width="15" height="15">
+                        <img class="mr-1" src="./holberton_school-icon/images/star_on.png" width="15" height="15">
+                        <img src="./holberton_school-icon/images/star_off.png" width="15" height="15">
+                        <p class="ml-5" style="color: #C271FF;">8min</p>
+                </div>
+            </div>
+        </li>
+
+        <li class="list-unstyled mr-4 d-block d-sm-block d-md-block">
+            <div class="card border-0" style="width: 14rem;">
+                <img class="card-img-top" src="./holberton_school-icon/images/thumbnail_1.jpg" alt="Card image cap">
+                <img src="./holberton_school-icon/images/play.png" alt="Card image cap" width="80" height="80" style="position: absolute; top: 30px; right: 80px;">
+                <div class="card-body small p-0">
+                    <h6 class="card-title font-weight-bold mb-1 mt-0 text-muted">Diagonal Smile</h6>
+                    <p class="card-text text-secondary text-justify cardtext mb-4">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                    <figure class="d-flex align-items-center mb-1">
+                        <img class="rounded-circle" src="./holberton_school-icon/images/profile_1.jpg" width="30" height="30">
+                        <figcaption>
+                            <p class="ml-2" style="color: #C271FF;">Phillip Massey</p>
+                        </figcaption>
+                    </figure>
+                        <div class="d-flex">
+                        <img class="mr-1" src="./holberton_school-icon/images/star_on.png" width="15" height="15">
+                        <img class="mr-1" src="./holberton_school-icon/images/star_on.png" width="15" height="15">
+                        <img class="mr-1" src="./holberton_school-icon/images/star_on.png" width="15" height="15">
+                        <img class="mr-1" src="./holberton_school-icon/images/star_on.png" width="15" height="15">
+                        <img src="./holberton_school-icon/images/star_off.png" width="15" height="15">
+                        <p class="ml-5" style="color: #C271FF;">8min</p>
+                </div>
+            </div>
+        </li>
+
+        <li class="list-unstyled mr-4 d-block d-sm-block d-md-block">
+            <div class="card border-0" style="width: 14rem;">
+                <img class="card-img-top" src="./holberton_school-icon/images/thumbnail_1.jpg" alt="Card image cap">
+                <img src="./holberton_school-icon/images/play.png" alt="Card image cap" width="80" height="80" style="position: absolute; top: 30px; right: 80px;">
+                <div class="card-body small p-0">
+                    <h6 class="card-title font-weight-bold mb-1 mt-0 text-muted">Diagonal Smile</h6>
+                    <p class="card-text text-secondary text-justify cardtext mb-4">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                    <figure class="d-flex align-items-center mb-1">
+                        <img class="rounded-circle" src="./holberton_school-icon/images/profile_1.jpg" width="30" height="30">
+                        <figcaption>
+                            <p class="ml-2" style="color: #C271FF;">Phillip Massey</p>
+                        </figcaption>
+                    </figure>
+                        <div class="d-flex">
+                        <img class="mr-1" src="./holberton_school-icon/images/star_on.png" width="15" height="15">
+                        <img class="mr-1" src="./holberton_school-icon/images/star_on.png" width="15" height="15">
+                        <img class="mr-1" src="./holberton_school-icon/images/star_on.png" width="15" height="15">
+                        <img class="mr-1" src="./holberton_school-icon/images/star_on.png" width="15" height="15">
+                        <img src="./holberton_school-icon/images/star_off.png" width="15" height="15">
+                        <p class="ml-5" style="color: #C271FF;">8min</p>
+                </div>
+            </div>
+        </li>
+
+        <li class="list-unstyled mr-4 d-block d-sm-block d-md-block">
+            <div class="card border-0" style="width: 14rem;">
+                <img class="card-img-top" src="./holberton_school-icon/images/thumbnail_1.jpg" alt="Card image cap">
+                <img src="./holberton_school-icon/images/play.png" alt="Card image cap" width="80" height="80" style="position: absolute; top: 30px; right: 80px;">
+                <div class="card-body small p-0">
+                    <h6 class="card-title font-weight-bold mb-1 mt-0 text-muted">Diagonal Smile</h6>
+                    <p class="card-text text-secondary text-justify cardtext mb-4">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                    <figure class="d-flex align-items-center mb-1">
+                        <img class="rounded-circle" src="./holberton_school-icon/images/profile_1.jpg" width="30" height="30">
+                        <figcaption>
+                            <p class="ml-2" style="color: #C271FF;">Phillip Massey</p>
+                        </figcaption>
+                    </figure>
+                        <div class="d-flex">
+                        <img class="mr-1" src="./holberton_school-icon/images/star_on.png" width="15" height="15">
+                        <img class="mr-1" src="./holberton_school-icon/images/star_on.png" width="15" height="15">
+                        <img class="mr-1" src="./holberton_school-icon/images/star_on.png" width="15" height="15">
+                        <img class="mr-1" src="./holberton_school-icon/images/star_on.png" width="15" height="15">
+                        <img src="./holberton_school-icon/images/star_off.png" width="15" height="15">
+                        <p class="ml-5" style="color: #C271FF;">8min</p>
+                </div>
+            </div>
+        </li>
+        <li class="list-unstyled mr-4 d-block d-sm-block d-md-block">
+            <div class="card border-0" style="width: 14rem;">
+                <img class="card-img-top" src="./holberton_school-icon/images/thumbnail_1.jpg" alt="Card image cap">
+                <img src="./holberton_school-icon/images/play.png" alt="Card image cap" width="80" height="80" style="position: absolute; top: 30px; right: 80px;">
+                <div class="card-body small p-0">
+                    <h6 class="card-title font-weight-bold mb-1 mt-0 text-muted">Diagonal Smile</h6>
+                    <p class="card-text text-secondary text-justify cardtext mb-4">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                    <figure class="d-flex align-items-center mb-1">
+                        <img class="rounded-circle" src="./holberton_school-icon/images/profile_1.jpg" width="30" height="30">
+                        <figcaption>
+                            <p class="ml-2" style="color: #C271FF;">Phillip Massey</p>
+                        </figcaption>
+                    </figure>
+                        <div class="d-flex">
+                        <img class="mr-1" src="./holberton_school-icon/images/star_on.png" width="15" height="15">
+                        <img class="mr-1" src="./holberton_school-icon/images/star_on.png" width="15" height="15">
+                        <img class="mr-1" src="./holberton_school-icon/images/star_on.png" width="15" height="15">
+                        <img class="mr-1" src="./holberton_school-icon/images/star_on.png" width="15" height="15">
+                        <img src="./holberton_school-icon/images/star_off.png" width="15" height="15">
+                        <p class="ml-5" style="color: #C271FF;">8min</p>
+                </div>
+            </div>
+        </li>
+
+        <li class="list-unstyled mr-4 d-block d-sm-block d-md-block">
+            <div class="card border-0" style="width: 14rem;">
+                <img class="card-img-top" src="./holberton_school-icon/images/thumbnail_1.jpg" alt="Card image cap">
+                <img src="./holberton_school-icon/images/play.png" alt="Card image cap" width="80" height="80" style="position: absolute; top: 30px; right: 80px;">
+                <div class="card-body small p-0">
+                    <h6 class="card-title font-weight-bold mb-1 mt-0 text-muted">Diagonal Smile</h6>
+                    <p class="card-text text-secondary text-justify cardtext mb-4">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                    <figure class="d-flex align-items-center mb-1">
+                        <img class="rounded-circle" src="./holberton_school-icon/images/profile_1.jpg" width="30" height="30">
+                        <figcaption>
+                            <p class="ml-2" style="color: #C271FF;">Phillip Massey</p>
+                        </figcaption>
+                    </figure>
+                        <div class="d-flex">
+                        <img class="mr-1" src="./holberton_school-icon/images/star_on.png" width="15" height="15">
+                        <img class="mr-1" src="./holberton_school-icon/images/star_on.png" width="15" height="15">
+                        <img class="mr-1" src="./holberton_school-icon/images/star_on.png" width="15" height="15">
+                        <img class="mr-1" src="./holberton_school-icon/images/star_on.png" width="15" height="15">
+                        <img src="./holberton_school-icon/images/star_off.png" width="15" height="15">
+                        <p class="ml-5" style="color: #C271FF;">8min</p>
+                </div>
+            </div>
+        </li>
+  </section>
+    </body>
+    </html>
