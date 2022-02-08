@@ -1,0 +1,140 @@
+
+@font-face {
+    font-family: 'holberton_school-icon';
+    src:  url('fonts/holberton_school-icon.eot?sq4eq4');
+    src:  url('fonts/holberton_school-icon.eot?sq4eq4#iefix') format('embedded-opentype'),
+      url('fonts/holberton_school-icon.ttf?sq4eq4') format('truetype'),
+      url('fonts/holberton_school-icon.woff?sq4eq4') format('woff'),
+      url('fonts/holberton_school-icon.svg?sq4eq4#holberton_school-icon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+
+/*header*/
+
+body{
+	margin:0;
+	padding:0;
+	background-image:url('./holberton_school-icon/images/pic_1.jpg');
+	font-family: 'Raleway',sans-serif;
+
+
+}
+
+.btnn{
+    margin-top: 20px;
+	background-color:  #C271FF;
+	position: absolute;
+  	left: 50%;
+  	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.text-dark {
+    color: #C271FF!important;
+    }
+    .text-muted {
+        color: #000000!important;
+
+    }
+
+    input[type=checkbox], input[type=radio] {
+        box-sizing: border-box;
+        padding: 0;
+        display: none;
+        }
+
+        .carousel-section {
+            background: #C271FF;
+          }
+
+          .btn {
+      
+left: 37.65%;
+right: 37.25%;
+top: 13.43%;
+bottom: 67.46%;
+
+background: #FFFFFF;
+mix-blend-mode: normal;
+opacity: 0.86;
+          }
+
+       
+          
+         
+
+
+
+@media (max-width: 576px) {
+    .header-nav .nav-link {
+      width: 100%;
+      margin: 0.5rem auto;
+      line-height: 1;
+    }
+    .header-nav {
+      display: none;
+      width: 100%;
+      text-align: center;
+      cursor: pointer;
+    }
+  
+    #menu {
+      cursor: pointer;
+      background: white;
+      height: 2px;
+      width: 12px;
+      position: absolute;
+      left: 10px;
+      top: 20px;
+      display: block;
+    }
+  
+    #menu::before {
+      content: "";
+      background: white;
+      height: 2px;
+      width: 20px;
+      position: relative;
+      top: -0.4rem;
+      display: block;
+      transition: all 0.2s ease;
+      cursor: pointer;
+    }
+  
+    #menu::after {
+      content: "";
+      background: white;
+      height: 2px;
+      width: 18px;
+      position: relative;
+      top: 0.3rem;
+      display: block;
+      transition: all 0.2s ease;
+    }
+  
+    #menu-btn:checked ~ .header-nav {
+      display: block;
+    }
+  
+    #menu-btn:checked ~ #menu {
+      background: transparent;
+      
+    }
+  
+    #menu-btn:checked ~ #menu::after {
+      width: 1.3rem;
+      top: 0.05rem;
+      transform: rotate(-45deg);
+    }
+  
+    #menu-btn:checked ~ #menu::before {
+      transform: rotate(45deg);
+      top: 0.19rem;
+      
+    }
+    
+    
+  }
+  
