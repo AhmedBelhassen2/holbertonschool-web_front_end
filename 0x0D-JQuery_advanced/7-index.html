@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Task 7</title>
+    <script src="http://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    
+    
+    <script type="application/javascript">
+       function createSearchForm() {
+                $('body').append([
+                    $('<input/>', { type: 'text'}),
+                    $('<input/>', { 
+                        type: 'submit',
+                        on: {
+                            click: function  () {
+                                queryWikipedia($('input:text').val());
+                            }
+                        }
+                    }),
+                    $('<ul/>')
+                ])
+            }
+            
+            function addNewArticle(id, title, snippet) {
+                $('ul').append(
+                    [
+                        $('<li />').append(
+                            [
+                                $('<p />').append(
+                                    [
+                                        $('<span />', {text: id + ' - '}),
+                                        $('<b />', {text: title})
+                                    ]
+                                ), $('<p />', {html: snippet})
+                            ]
+                        )
+                    ]
+                )
+
+            }
+                
+            function queryWikipedia(search) {
+                    $.ajax({
+                        type: "GET",
+                        url: `https://en.wikipedia.org/w/api.php?origin=*&action=query&list=search&srsearch=${search}&format=json`,
+                        success: function (res) {
+                            let resArr = res.query.search;
+                            for (let obj in resArr) {
+                                addNewArticle(resArr[obj].pageid, resArr[obj].title, resArr[obj].snippet);
+                            }
+                        },
+                        error: function() {
+                            console.log("Something went wrong.");
+                        }
+                    })
+                }
+                createSearchForm();
+        </script>
+    </body>
+
+</html>
