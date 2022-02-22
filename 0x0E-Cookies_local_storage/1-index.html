@@ -3,20 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/combine/npm/js-cookie@3.0.1,npm/js-cookie@3.0.1/index.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/index.min.js"></script>
   <script src="src/1-index.js"></script>
   <title>Basic Cookie 1</title>
 </head>
 <body>
   <main>
     <h1>Login to the website</h1>
-    <form id="log">
-      <input type="text" placeholder="Firstname" id="firstname" required>
-      <input type="text" placeholder="Email" id="email" required>
-      <input type="submit" value="Log me in">
+    <form name="form1">
+        <input type="text" name="firstname" id="firstname" placeholder="Firstname" value=>
+        <input type="email" name="email" id="email" placeholder="Email">
+        <button type="submit" onclick="setCookies()">Log me in</button>
     </form>
-
     <h1>Cookies</h1>
-    <button id="btn-show-cook">Show the cookies</button>
-  </main>
+    <button type="submit" onclick="showCookies()">Show the cookies</button>
+  </div>
+  <script>
+    function setCookies(username, email) {
+        username = Cookies.set('name', document.form1.firstname.value, { expires: 10, path: '' });
+        email = Cookies.set('email', document.form1.email.value, { expires: 10, path: '' });
+    }
+    function showCookies() {
+        let c = document.createElement('p');
+        c.innerText = "Cookies: " + 'name: ' + Cookies.get('name')+ ', ' + 'email: ' + Cookies.get('email');
+        document.body.appendChild(c);
+    }
+</script>
 </body>
+
 </html>
